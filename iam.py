@@ -3,7 +3,8 @@ import boto3
 import os
 from datetime import datetime, timedelta, timezone
 
-# DAYS = int(input("The days after creation : "))
+# DAYS = int(input("The days after creation : "))       
+# local에 저장된 ./aws/credentials 로 사용할때 , days input으로 받아서 사용
 DAYS = int(os.environ['DAYS'])
 
 iam = boto3.client('iam')
