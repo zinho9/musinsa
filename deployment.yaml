@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: iamtest
   name: iamtest
@@ -10,15 +9,11 @@ spec:
   selector:
     matchLabels:
       app: iamtest
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: iamtest
     spec:
       containers:
       - image: docker.io/wlsgh0122/iamtest
         name: iamtest
-        resources: {}
-status: {}
