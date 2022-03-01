@@ -3,6 +3,7 @@ import boto3
 import os
 from datetime import datetime, timedelta, timezone
 
+# local 에서 진행할 때, input으로 받아서 사용 가능
 # DAYS = int(input("The days after creation : "))
 DAYS = int(os.environ['DAYS'])
 
